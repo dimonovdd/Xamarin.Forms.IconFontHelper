@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             xmlns:helper="clr-namespace:IconFontHelper;assembly=IconFontHelper"
+             xmlns:icons="clr-namespace:IconFontHelper.Sample"
+             x:Class="IconFontHelper.Sample.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helper:IconToStringConverter x:Key="iconConv" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <icons:IconBrandSource Icon="Github" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        Glyph="{Binding Source={x:Static icons:IconBrand.Git}, Converter={StaticResource iconConv}}"
+                        FontFamily="{x:Static icons:IconBrandSource.fontAlias}" Color="Blue" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Label Margin="15" HorizontalOptions="Center" VerticalOptions="Center" FontSize="100" TextColor="Green"
+                Text="{Binding Source={x:Static icons:IconBrand.GitAlt}, Converter={StaticResource iconConv}}" 
+                FontFamily="{x:Static icons:IconBrandSource.fontAlias}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
