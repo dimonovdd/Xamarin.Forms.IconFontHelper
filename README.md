@@ -1,7 +1,7 @@
 
 # Xamarin.Forms.IconFontHelper <img src="/icon.png" width="45" height="40"/> 
 
-**This is a small helper for working with Icons Fonts**   [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.IconFontHelper?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.IconFontHelper/)
+This is a small helper for working with Icons Fonts   [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.IconFontHelper?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.IconFontHelper/)
 
 ## Fonts Packages based on this helper
 
