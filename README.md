@@ -3,6 +3,12 @@
 
 This is a small helper for working with Icons Fonts   [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.IconFontHelper?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.IconFontHelper/)
 
+When using icon font packages based on this plugin, you don't need to remember icon names or unicode  values.
+
+![IntelliSenseSample](/IntelliSenseSample.png)
+
+The guide of the Icon Font unicode values is written as an Enum which is why the intelliSense technology will always suggest you the name
+
 ## Fonts Packages based on this helper
 
 ### [FontAwesome](https://github.com/dimonovdd/Xamarin.Forms.FontAwesome)
